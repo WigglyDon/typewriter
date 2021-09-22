@@ -6,6 +6,10 @@ for (let char of sentence) {
   setTimeout(() => {
     process.stdout.write(char);
   
-  }, timer * 100 );
+  }, timer * 50 );
   timer ++;
 }
+
+setTimeout(() => {
+console.log('');
+}, sentence.length * timer * 1.1)
